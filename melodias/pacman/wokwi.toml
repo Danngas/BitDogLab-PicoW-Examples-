@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/pacman.uf2'
+elf = 'build/pacman.elf'
