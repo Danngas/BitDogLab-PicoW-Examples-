@@ -75,11 +75,17 @@ int tempoNotas[] = {
 const int compasso = 1000; // Compasso que altera a duração das notas
 
 // Função principal que executa a reprodução das notas
+// Compasso da música (determina o tempo da música)
+const int compasso = 1000; // Compasso que altera a duração das notas
+
+// Função principal que executa a reprodução das notas
 int main() {
     stdio_init_all(); // Inicializa a comunicação com o terminal (para depuração, por exemplo)
     
+    int numeroNotas = sizeof(melodia) / sizeof(melodia[0]);  // Número de notas na melodia
+    
     // Laço para tocar todas as notas da melodia
-    for (int Nota = 0; Nota < 82; Nota++) { // 145 notas no array melodia
+    for (int Nota = 0; Nota < numeroNotas; Nota++) { //  notas no array melodia
         int tempo = compasso / tempoNotas[Nota]; // Calcula o tempo da nota com base no compasso
         play_note(melodia[Nota], tempo, divisor_frequency); // Toca a nota por um tempo determinado
         sleep_ms(tempo * 1.2); // Dá um intervalo de 20% após a nota para distinguir
