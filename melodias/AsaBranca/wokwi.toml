@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/AsaBranca.uf2'
+elf = 'build/AsaBranca.elf'
