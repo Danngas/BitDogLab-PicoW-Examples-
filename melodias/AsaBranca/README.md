@@ -114,10 +114,7 @@ As notas musicais são representadas por frequências em Hertz (Hz). Abaixo est�
 ## Como Usar
 
 1. Clone este repositório para sua máquina:
-   ```sh
-   git clone https://github.com/seu-usuario/bitdoglab-melody.git
-   ```
-
+ 
 2. Compile o código utilizando o ambiente de desenvolvimento para Raspberry Pi Pico (como o SDK oficial da Pico).
 
 3. Envie o binário para a placa BitDogLab.
