@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/PiradasdoCaribe.uf2'
+elf = 'build/PiradasdoCaribe.elf'
